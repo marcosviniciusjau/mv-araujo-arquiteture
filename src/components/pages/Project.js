@@ -37,14 +37,12 @@ useEffect(()=>{
           <button className={styles.btn} onClick={toogleProjectForm}>
            {!showProjectForm ? 'Editar Projeto': 'Fechar'}
             </button>
-            {!showProjectForm ?(
+            {!showProjectForm ? (
             <div className={styles.project_info}>
               <p>
                 <span>Categoria:</span> {project.category.name}
                 </p>
-              </div>
-            ):(
-              <div>
+           
                 <p>
                   <span>Total do orçamento:
                     </span> R${project.budget}
@@ -53,6 +51,10 @@ useEffect(()=>{
                   <span>Total Utilizado:</span> R${project.cost}
                   </p>
                 </div>
+                 ) : (
+                  <div className={styles.project_info}>
+                    <p>detalhes do projeto</p>
+                    </div>
             )}
         </div>
       </Containers>

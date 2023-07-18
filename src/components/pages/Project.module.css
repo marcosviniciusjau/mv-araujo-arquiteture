@@ -35,8 +35,8 @@
     text-decoration: none;
     transition: 0.5s;
     cursor: pointer;
-    width: 100%;
-    bottom: none;
+    max-height: 40px;
+    border: none;
 }
 
 .btn:hover{
