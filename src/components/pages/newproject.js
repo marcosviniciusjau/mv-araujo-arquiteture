@@ -16,7 +16,7 @@ function NewProject(){
       {
         method:"POST",
         headers:{
-            'Content-type' :'aplication/json',
+            'Content-type' :'application/json',
         },
         body: JSON.stringify(project),
       }).then((resp) => resp.json())
@@ -24,7 +24,8 @@ function NewProject(){
             console.log(data)
             history('/projects',{state:{message:'Projeto enviado com sucesso'}})
         })
-        .catch(err=> console.log(err))
+        .catch(err=> 
+          console.log(err))
 
    }
 
