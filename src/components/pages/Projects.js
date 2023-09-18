@@ -26,7 +26,7 @@ function Projects(){
         fetch('http://localhost:5000/projects',{
         method:"GET",
         headers:{
-            'Content-Type':'aplication/json',
+            'Content-Type':'application/json',
         },
     }).then(resp=> resp.json())
     .then(data=>{
@@ -43,7 +43,7 @@ function Projects(){
       fetch(`http://localhost:5000/projects/${id}`,{
        method:'DELETE',
        headers:{
-        'Content-Type':'aplication/json'
+        'Content-Type':'application/json'
       },
       }).then(resp=> resp.json())
         .then(data=> {
