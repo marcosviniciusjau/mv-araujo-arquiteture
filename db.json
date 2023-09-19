@@ -1,27 +1,92 @@
 {
   "projects": [
     {
-      "id": 1
-    },
-    {
-      "id": 2
-    },
-    {
-      "id": 3
-    },
-    {
-      "id": 4
-    },
-    {
       "name": "Projeto Testes",
       "budget": "7000",
       "category": {
         "id": "1",
         "name": "Infra"
       },
+      "cost": 900,
+      "services": [
+        {
+          "name": "Meu novo serviço",
+          "cost": "300",
+          "description": "faz isso aqui",
+          "id": "709ca73a-17e9-49a0-87bb-ae887df7b52e"
+        },
+        {
+          "name": "Meu novo serviço 2",
+          "cost": "300",
+          "description": "faz isso aqui",
+          "id": "93c3d554-e028-4c96-a73d-7471791c624f"
+        },
+        {
+          "name": "Meu novo serviço 3",
+          "cost": "300",
+          "description": "faz isso aqui",
+          "id": "3c38b3de-21d9-4a45-8889-175d9d61677d"
+        }
+      ],
+      "id": 5
+    },
+    {
+      "name": "Projeto Teste",
+      "budget": "5000",
+      "category": {
+        "id": "2",
+        "name": "Desenvolvimento"
+      },
+      "cost": 1199,
+      "services": [
+        {
+          "name": "Contratar dev php",
+          "cost": "300",
+          "description": "emails",
+          "id": "52d30502-f28b-4bfc-b159-0d0592e889c6"
+        },
+        {
+          "name": "teste",
+          "cost": "300",
+          "description": "teste",
+          "id": "61911470-0bb2-4446-bbae-5b200d3863f3"
+        },
+        {
+          "name": "teste 2",
+          "cost": "299",
+          "description": "teste 2",
+          "id": "e881fc63-7b3d-42c7-ba73-b1ecda59d908"
+        },
+        {
+          "name": "Meu novo serviço",
+          "cost": "300",
+          "description": "teste 3",
+          "id": "c3eb4dfc-2388-4846-a25a-5123556054cb"
+        }
+      ],
+      "id": 6
+    },
+    {
+      "name": "Projeto Teste 2",
+      "budget": "3000",
+      "category": {
+        "id": "4",
+        "name": "Planejamento"
+      },
       "cost": 0,
       "services": [],
-      "id": 5
+      "id": 7
+    },
+    {
+      "name": "Projeto Teste 3",
+      "budget": "5000",
+      "category": {
+        "id": "3",
+        "name": "Design"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 8
     }
   ],
   "categories": [
