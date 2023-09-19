@@ -3,11 +3,14 @@ import { useNavigate } from "react-router-dom"
 import ProjectForm from "../project/ProjectForm"
 
 import styles from "./NewProject.module.css"
+import { useState } from "react"
 
 function NewProject() {
+
   const history = useNavigate()
 
   function createPost(project) {
+  
     project.cost = 0
     project.services = []
 

@@ -37,31 +37,13 @@
         "id": "2",
         "name": "Desenvolvimento"
       },
-      "cost": 1199,
+      "cost": 300,
       "services": [
         {
           "name": "Contratar dev php",
           "cost": "300",
           "description": "emails",
           "id": "52d30502-f28b-4bfc-b159-0d0592e889c6"
-        },
-        {
-          "name": "teste",
-          "cost": "300",
-          "description": "teste",
-          "id": "61911470-0bb2-4446-bbae-5b200d3863f3"
-        },
-        {
-          "name": "teste 2",
-          "cost": "299",
-          "description": "teste 2",
-          "id": "e881fc63-7b3d-42c7-ba73-b1ecda59d908"
-        },
-        {
-          "name": "Meu novo serviço",
-          "cost": "300",
-          "description": "teste 3",
-          "id": "c3eb4dfc-2388-4846-a25a-5123556054cb"
         }
       ],
       "id": 6
@@ -87,6 +69,60 @@
       "cost": 0,
       "services": [],
       "id": 8
+    },
+    {
+      "name": "Projeto Teste",
+      "budget": "5000",
+      "category": {
+        "id": "1",
+        "name": "Infra"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 9
+    },
+    {
+      "name": "Projeto Teste",
+      "budget": "5000",
+      "category": {
+        "id": "2",
+        "name": "Desenvolvimento"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 10
+    },
+    {
+      "name": "Projeto Teste",
+      "budget": "5000",
+      "category": {
+        "id": "2",
+        "name": "Desenvolvimento"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 11
+    },
+    {
+      "name": "Projeto Teste",
+      "budget": "5000",
+      "cost": 0,
+      "services": [],
+      "id": 12
+    },
+    {
+      "name": "Projeto Teste",
+      "budget": "5000",
+      "cost": 0,
+      "services": [],
+      "id": 13
+    },
+    {
+      "name": "Projeto Teste",
+      "budget": "5000",
+      "cost": 0,
+      "services": [],
+      "id": 14
     }
   ],
   "categories": [

@@ -8,11 +8,12 @@ return (
          name={name} 
          id={name} 
          onChange={handleOnChange} 
-         value={value || ''}>
+         value={value || ''}
+         required>
             
         <option> Selecione uma opção</option>
         {options.map((option) => (
-         <option value={option.id} key={option.id}>{option.name}</option>
+         <option value={option.id} key={option.id} required>{option.name}</option>
         ))}
         </select>
     </div>

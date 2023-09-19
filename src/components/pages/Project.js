@@ -64,7 +64,14 @@ function Project() {
   }
 
   function createService(project) {
-    
+    const isDuplicated= project.services.flatMap(s=> s.name === s.name)
+    if (isDuplicated){
+      setShowServiceForm(false)
+      setMessage("Serviço já cadastrado!")
+      setType("error")
+      project.services.pop()
+      return false
+    }
     const lastService = project.services[project.services.length - 1]
     lastService.id = uuidv4()
 
@@ -72,6 +79,7 @@ function Project() {
     const newCost = parseFloat(project.cost) + parseFloat(lastServiceCost)
 
     if (newCost > parseFloat(project.budget)) {
+      setShowServiceForm(false)
       setMessage("Orçamento ultrapassado, verifique o valor do serviço!")
       setType("error")
       project.services.pop()
@@ -96,7 +104,30 @@ function Project() {
 
   }
 
-  function removeService() {}
+  function removeService(id,cost) {
+
+   const servicesUpdated= project.services.filter(
+    (service) => service.id !== id
+   )
+  
+   const projectUpdated= project
+
+   projectUpdated.services= servicesUpdated
+   projectUpdated.cost= parseFloat(projectUpdated.cost)- parseFloat(cost)
+   fetch (`http://localhost:5000/projects/${projectUpdated.id}`,{
+    method: 'PATCH',
+    headers:{
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(projectUpdated)
+   }).then((resp)=>resp.json())
+     .then((data)=>{
+      setProject(projectUpdated)
+      setServices(servicesUpdated)
+      setMessage('Serviço removido com sucesso!')
+     })
+     .catch(err => console.log(err))
+  }
 
   function toggleProjectForm() {
     setShowProjectForm(!showProjectForm)
