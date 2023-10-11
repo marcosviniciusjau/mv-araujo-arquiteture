@@ -9,6 +9,8 @@ import Navbar from './components/layouts/Navbar';
 import Footer from './components/layouts/Footer';
 import Projects from './components/pages/Projects';
 import Project from './components/pages/Project';
+<a href="https://www.flaticon.com/br/icones-gratis/casa-moderna" title="casa moderna ícones">Casa moderna ícones criados por xnimrodx - Flaticon</a>
+
 function App() {
   return (
     <BrowserRouter> 
@@ -31,5 +33,7 @@ function App() {
     </BrowserRouter>
   );
 }
-
+<a href="https://www.flaticon.com/br/icones-gratis/casa" title="casa ícones">
+  Casa ícones criados por Prosymbols Premium - Flaticon
+</a>
 export default App;
