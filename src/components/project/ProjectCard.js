@@ -23,7 +23,7 @@ function ProjectCard({id,name,budget,category,handleRemove}){
          <Link to={`/project/${id}`}>
             <BsPencil/> Editar
             </Link>
-          <button onClick={handleRemove}>
+          <button onClick={remove}>
             <BsFillTrashFill/> Excluir
             </button>
         

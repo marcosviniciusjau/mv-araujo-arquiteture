@@ -32,17 +32,17 @@
     background-color: #ccc;
     margin-right: 5px;
 }
-.category_text .infra{
-  background-color: #FFAEBC;
+.category_text .comercial{
+  background-color: #B30000;
 }
-.category_text .desenvolvimento{
-    background-color: #A0E7E5;
+.category_text .lazer{
+    background-color: #9B59B6;
 }
-.category_text .design{
-    background-color: #b4f8c8;
+.category_text .sustentável{
+    background-color: #556B2F;
 }
-.category_text .planejamento{
-    background-color: #FBE7C6;
+.category_text .residencial{
+    background-color: #6FA2E1;
 }
 
 .project_card_actions{

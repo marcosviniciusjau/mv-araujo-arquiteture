@@ -1,0 +1,46 @@
+div {
+  margin-left: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  gap: 16px;
+}
+.contact_info {
+  padding-top:20px;
+  margin-bottom:20px;
+    list-style-type: none;
+}
+.contact_info li{
+    margin:0 1em;
+}
+
+.contact_info .facebook:hover {
+  color: #1877F2; /* Cor hexadecimal do Facebook */
+}
+
+.contact_info .whatsapp:hover {
+  color: #25D366; /* Cor hexadecimal do WhatsApp */
+}
+
+.contact_info .instagram:hover {
+  color: #E4405F; /* Cor hexadecimal do Instagram */
+}
+
+.contact_info .phone:hover {
+  color: #FF5733; /* Cor criativa para o ícone do telefone */
+}
+
+
+.contact_info svg{
+    font-size: 1.5em;
+    cursor:pointer;
+}
+
+.contact-img{
+  display:flex;
+}
+
+.contact {
+  width:500px;
+  margin-left:10px;
+}
+

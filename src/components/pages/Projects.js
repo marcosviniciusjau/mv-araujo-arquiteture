@@ -11,10 +11,10 @@ import ProjectCard from "../project/ProjectCard"
 function Projects() {
   const [projects, setProjects] = useState([])
   const [removeLoading, setRemoveLoading] = useState(false)
-  const [projectMessage, setProjectMessage] = useState("")
+  const [projectMessage, setProjectMessage] = useState('')
 
   const location = useLocation()
-  let message = ""
+  let message = ''
   if (location.state) {
     message = location.state.message
   }
@@ -38,19 +38,20 @@ function Projects() {
     )
   }, [])
 
-  function removeProject(id) {
-    fetch(`http://localhost:5000/projects/${id}`, {
-      method: "DELETE",
-      headers: {
-        "Content-Type": "application/json",
-      },
-    })
-      .then((resp) => resp.json())
-      .then((data) => {
-        setProjects(projects.filter((project) => project.id !== id))
-        setProjectMessage("Projeto removido com sucesso!")
-      })
-  }
+   function removeProject(id) {
+     fetch(`http://localhost:5000/projects/${id}`, {
+       method: "DELETE",
+       headers: {
+         "Content-Type": "application/json",
+       },
+     })
+       .then((resp) => resp.json())
+       .then((data) => {
+         setProjects(projects.filter((project) => project.id !== id))
+         setProjectMessage("Projeto removido com sucesso!")
+       })
+   }
+
 
   return (
     <div className={styles.project_container}>
@@ -58,20 +59,25 @@ function Projects() {
         <h1>Meus Projetos</h1>
         <LinkButton to="/newproject" text="Criar projeto" />
       </div>
+
       {message && <Message type="success" msg={message} />}
       {projectMessage && <Message type="success" msg={projectMessage} />}
       <Containers customClass="start">
         {projects.length > 0 &&
-          projects.map((project) => (
-            <ProjectCard
-              id={project.id}
-              name={project.name}
-              budget={project.budget}
-              key={project.id}
-              handleRemove={removeProject}
-            />
-          ))}
+          projects.map((project) => {
+            return (
+              <ProjectCard
+                id={project.id}
+                name={project.name}
+                budget={project.budget}
+                category={project?.category?.name}
+                key={project.id}
+                handleRemove={removeProject}
+              />
+            )
+          })}
         {!removeLoading && <Loading />}
+
         {removeLoading && projects.length === 0 && (
           <p>Não há projetos cadastrados!</p>
         )}

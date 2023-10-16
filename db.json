@@ -1,168 +1,73 @@
 {
   "projects": [
     {
-      "name": "Projeto Testes",
-      "budget": "7000",
+      "name": "Apartamento",
+      "budget": "100000",
       "category": {
         "id": "1",
-        "name": "Infra"
+        "name": "Residencial"
       },
-      "cost": 900,
-      "services": [
-        {
-          "name": "Meu novo serviço",
-          "cost": "300",
-          "description": "faz isso aqui",
-          "id": "709ca73a-17e9-49a0-87bb-ae887df7b52e"
-        },
-        {
-          "name": "Meu novo serviço 2",
-          "cost": "300",
-          "description": "faz isso aqui",
-          "id": "93c3d554-e028-4c96-a73d-7471791c624f"
-        },
-        {
-          "name": "Meu novo serviço 3",
-          "cost": "300",
-          "description": "faz isso aqui",
-          "id": "3c38b3de-21d9-4a45-8889-175d9d61677d"
-        }
-      ],
-      "id": 5
+      "cost": 0,
+      "services": [],
+      "id": 20
     },
     {
-      "name": "Projeto Teste",
-      "budget": "5000",
-      "category": {
-        "id": "2",
-        "name": "Desenvolvimento"
-      },
-      "cost": 300,
-      "services": [
-        {
-          "name": "Contratar dev php",
-          "cost": "300",
-          "description": "emails",
-          "id": "52d30502-f28b-4bfc-b159-0d0592e889c6"
-        }
-      ],
-      "id": 6
-    },
-    {
-      "name": "Projeto Teste 2",
-      "budget": "3000",
+      "name": "Casas passivas",
+      "budget": "10000",
       "category": {
         "id": "4",
-        "name": "Planejamento"
+        "name": "Sustentável"
       },
       "cost": 0,
       "services": [],
-      "id": 7
+      "id": 21
     },
     {
-      "name": "Projeto Teste 3",
-      "budget": "5000",
+      "name": "Escritório",
+      "budget": "30000",
+      "category": {
+        "id": "2",
+        "name": "Comercial"
+      },
+      "cost": 30000,
+      "services": [
+        {
+          "name": "Sala de Reuniões",
+          "cost": "30000",
+          "description": "Reuniões",
+          "id": "2ab354bc-1232-4ede-86e3-3d114f8859bb"
+        }
+      ],
+      "id": 23
+    },
+    {
+      "name": "Casa de Praia",
+      "budget": "80000",
       "category": {
         "id": "3",
-        "name": "Design"
+        "name": "Lazer"
       },
       "cost": 0,
       "services": [],
-      "id": 8
-    },
-    {
-      "name": "Projeto Teste",
-      "budget": "5000",
-      "category": {
-        "id": "1",
-        "name": "Infra"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 9
-    },
-    {
-      "name": "Projeto Teste",
-      "budget": "5000",
-      "category": {
-        "id": "2",
-        "name": "Desenvolvimento"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 10
-    },
-    {
-      "name": "Projeto Teste",
-      "budget": "5000",
-      "category": {
-        "id": "2",
-        "name": "Desenvolvimento"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 11
-    },
-    {
-      "name": "Projeto Teste",
-      "budget": "5000",
-      "cost": 0,
-      "services": [],
-      "id": 12
-    },
-    {
-      "name": "Projeto Teste",
-      "budget": "5000",
-      "cost": 0,
-      "services": [],
-      "id": 13
-    },
-    {
-      "name": "Projeto Teste",
-      "budget": "5000",
-      "cost": 0,
-      "services": [],
-      "id": 14
-    },
-    {
-      "name": "teste",
-      "budget": "100",
-      "category": {
-        "id": "1",
-        "name": "Infra"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 15
-    },
-    {
-      "name": "teste",
-      "budget": "1000",
-      "category": {
-        "id": "2",
-        "name": "Desenvolvimento"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 16
+      "id": 24
     }
   ],
   "categories": [
     {
       "id": 1,
-      "name": "Infra"
+      "name": "Residencial"
     },
     {
       "id": 2,
-      "name": "Desenvolvimento"
+      "name": "Comercial"
     },
     {
       "id": 3,
-      "name": "Design"
+      "name": "Lazer"
     },
     {
       "id": 4,
-      "name": "Planejamento"
+      "name": "Sustentável"
     }
   ]
 }

@@ -64,14 +64,8 @@ function Project() {
   }
 
   function createService(project) {
-    const isDuplicated= project.services.flatMap(s=> s.name === s.name)
-    if (isDuplicated){
-      setShowServiceForm(false)
-      setMessage("Serviço já cadastrado!")
-      setType("error")
-      project.services.pop()
-      return false
-    }
+
+
     const lastService = project.services[project.services.length - 1]
     lastService.id = uuidv4()
 
@@ -124,7 +118,7 @@ function Project() {
      .then((data)=>{
       setProject(projectUpdated)
       setServices(servicesUpdated)
-      setMessage('Serviço removido com sucesso!')
+      setMessage('Acréscimo removido com sucesso!')
      })
      .catch(err => console.log(err))
   }
@@ -172,21 +166,21 @@ function Project() {
               )}
             </div>
             <div className={styles.service_form_container}>
-              <h2>Adicione um serviço:</h2>
+              <h2>Adicione um acréscimo:</h2>
               <button className={styles.btn} onClick={toggleServiceForm}>
-                {!showServiceForm ? "Adicionar Serviço" : "Fechar"}
+                {!showServiceForm ? "Adicionar Acréscimo" : "Fechar"}
               </button>
               <div className={styles.project_info}>
                 {showServiceForm && (
                   <ServiceForm
                     handleSubmit={createService}
-                    btnText="Adicionar Serviço"
+                    btnText="Adicionar acréscimo"
                     projectData={project}
                   />
                 )}
               </div>
             </div>
-            <h2>Serviços:</h2>
+            <h2>Acréscimos:</h2>
             <Containers customClass="start">
               {services.length > 0 &&
                 services.map((service) => (
@@ -199,7 +193,7 @@ function Project() {
                     handleRemove={removeService}
                   />
                 ))}
-              {services.length === 0 && <p>Não há serviços cadastrados.</p>}
+              {services.length === 0 && <p>Não há acréscimos cadastrados.</p>}
             </Containers>
           </Containers>
         </div>
