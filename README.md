@@ -1,4 +1,6 @@
-# Este é o site da MV Araújo Arquitetura, uma empresa imaginária de renome no mundo da arquitetura. Seu design elegante e moderno reflete o profissionalismo da empresa, proporcionando uma experiência incrível aos visitantes. Desenvolvido em React, com esse site é possível cadastrar projetos e adicionar os acréscimos com uma validação para impedir acrésimos duplicados
+# This is the website of MV Araújo Arquitetura, an imaginary company renowned in the world of architecture.  
+# Its elegant and modern design reflects the company's professionalism, providing an incredible experience for visitors.
+# Developed in React, with this website it is possible to register projects and add additions with validation to prevent duplicate additions
 
 # Vídeo demonstrativo:
 
