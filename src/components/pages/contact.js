@@ -5,7 +5,7 @@ import contact from '../../img/contato.png'
 function Contact() {
   return (
     <>
-      <div>
+      <div className={styles.contactContainer}>
         <h1>Contato</h1>
         <p>
           Entre em contato conosco para discutir seus projetos de arquitetura.
@@ -38,7 +38,7 @@ function Contact() {
         <img
           src={contact}
           className="contact"
-          width={"500px"}
+          width={"560px"}
           alt="contact-img"
         />
       </aside>

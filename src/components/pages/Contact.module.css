@@ -1,8 +1,14 @@
-div {
+#root{
+  
+  background-image:url("../../img/fundo.png");
+}
+.contactContainer {
   margin-left: 10px;
   padding-top: 15px;
   padding-bottom: 15px;
   gap: 16px;
+  
+  background-image:url("../../img/fundo.png");
 }
 .contact_info {
   padding-top:20px;
@@ -29,12 +35,10 @@ div {
   color: #FF5733; /* Cor criativa para o ícone do telefone */
 }
 
-
 .contact_info svg{
     font-size: 1.5em;
     cursor:pointer;
 }
-
 .contact-img{
   display:flex;
 }

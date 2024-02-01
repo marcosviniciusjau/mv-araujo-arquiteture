@@ -1,7 +1,6 @@
 .navbar{
-    display:flex;
     justify-content: space-between;
-    background-color: #00BFFF;
+    background-color: #2a6583;
     padding:1em;
 }
 
@@ -13,12 +12,15 @@
 .item{
     margin-right: 1em;
 }
-
+.title{
+    display:flex;
+    text-decoration:none;
+}
 .item a{
     color:#fff;
     text-decoration: none;
 }
 
 .item a:hover{
-    color:#00FA9A;
+    color:#d85a41;
 }

@@ -1,17 +1,6 @@
 {
   "projects": [
     {
-      "name": "Apartamento",
-      "budget": "100000",
-      "category": {
-        "id": "1",
-        "name": "Residencial"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 20
-    },
-    {
       "name": "Casas passivas",
       "budget": "10000",
       "category": {
@@ -23,33 +12,15 @@
       "id": 21
     },
     {
-      "name": "Escritório",
-      "budget": "30000",
-      "category": {
-        "id": "2",
-        "name": "Comercial"
-      },
-      "cost": 30000,
-      "services": [
-        {
-          "name": "Sala de Reuniões",
-          "cost": "30000",
-          "description": "Reuniões",
-          "id": "2ab354bc-1232-4ede-86e3-3d114f8859bb"
-        }
-      ],
-      "id": 23
-    },
-    {
-      "name": "Casa de Praia",
-      "budget": "80000",
+      "name": "Piscina",
+      "budget": "50000",
       "category": {
         "id": "3",
         "name": "Lazer"
       },
       "cost": 0,
       "services": [],
-      "id": 24
+      "id": 23
     }
   ],
   "categories": [

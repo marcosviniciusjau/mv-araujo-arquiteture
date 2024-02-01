@@ -10,8 +10,8 @@
 }
 
 .project_details h1{
-    background-color: #222;
-    color: #00FA9A;
+    background-color: #2a6583;
+    color:#d85a41;
     padding: 0.4em;
 }
 .project_details span{
@@ -29,7 +29,7 @@
 }
 
 .btn{
-    background-color: #00BFFF;
+    background-color: #2a6583;
     color: #fff;
     padding:0.5em 1em;
     text-decoration: none;

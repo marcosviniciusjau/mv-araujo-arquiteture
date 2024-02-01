@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@500&display=swap');
 .footer{
-    background-color: #222;
+    background-color: #d85a41;
     color:#fff;
     padding: 3em;
     text-align: center;
@@ -17,7 +17,7 @@
 }
 
 .social_list li:hover{
-    color:#00FA9A
+    color:#2a6583
 }
 
 .social_list svg{
@@ -26,17 +26,14 @@
 }
 
 .copy_right{
-    margin-top:2em;
+    margin-top:1em;
 }
-
+.copy_right span{
+    font-family: 'Alegreya', serif;
+    font-weight:bold;
+}
 
 .img{
     width:50px;
     padding-right:5px;
-}
-span{
-    font-family: 'Alegreya', serif;
-}
-p{
-    padding-bottom:-15px;
 }

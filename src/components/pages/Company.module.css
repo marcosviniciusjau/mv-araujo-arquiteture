@@ -3,18 +3,35 @@
 *{
   font-family: 'Lato', sans-serif;
 }
+.companyContainer {
+  margin-left: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  gap: 16px;
+  background-image:url("../../img/fundo.png");
+}
+
 h1{
+  color:#000;
   padding-top: 40px;
 }
 h2{
+  color:#000;
   padding-top: 40px;
 }
 h3{
+  color:#000;
   padding-top: 40px;
 }
 h4{
+  color:#000;
   padding-top: 40px;
 }
 h5{
+  color:#000;
   padding-top: 40px;
 }
+.contactImg{
+  display:flex;
+}
+

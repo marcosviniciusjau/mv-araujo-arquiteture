@@ -1,30 +1,89 @@
 .home_container{
-    width:100%;
+    padding:0;
+    margin:0;
+     width:100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding:4em;
+    justify-content: center; 
+    background-color: #2a6583;
 }
-
+.about{
+    display:flex;
+    
+}
+.about img{
+    margin-left:15px;
+    padding-bottom:5px;
+}
+.about h3{
+    font-size:1rem;
+    padding-top:75px;
+    padding-left:55px;
+}
 .home_container h1{
     font-size: 2.5em;
     margin-bottom: .5em;
 }
+.home_container h2{
+    font-size: 1.5em;
+    margin-bottom:-55px;
+    margin-left:325px;
+}
+.titleCategories{
+    margin-top:-70px;
+}
+#comercial{
+   margin-left:1px;
+}
+#residencial{
+   margin-left:35px;
+}
+#lazer{
+   margin-left:35px;
+}
+.imgCarrosel{
+    width: 40px;
+    margin:2em 0;
+}
+.img{
+    width: 400px;
+    margin:1em 0;
+}
+.categories{    
+    background-color: #2a6583;
+    display:flex;
+}
+.names{
+    margin-top:-35px;
+    display:flex;
+}
+.imgs{
+    padding:25px;
+}
+.banner{
+    width:1000px;
+}
+.dots .active {
+  background-color: #000;
+  color: #fff;
+}
 
+.dots span {
+  font-size: 12px;
+  color: #000;
+  margin-right: 5px;
+}
+.name{
+    padding:15px;
+}
 .home_container h1 span{
-    color:#00FA9A;
+    color:#d85a41;
     padding: 0 .2em;
-    background-color: #222;
+    background-color: #2a6583;
 }
 
 .home_container p{
     margin-bottom:1.5em;
-    color: #fff;
 }
 
-.home_container img{
-    width: 400px;
-    margin:2em 0;
-
-}
