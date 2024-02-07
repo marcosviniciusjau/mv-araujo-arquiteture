@@ -4,11 +4,11 @@ import Company from './components/pages/Company';
 import Contact from './components/pages/Contact';
 import NewProject from './components/pages/NewProject';
 import { Container } from 'react-bootstrap';
-import Containers from './components/layouts/Container';
-import Navbar from './components/layouts/Navbar';
-import Footer from './components/layouts/Footer';
-import Projects from './components/pages/Projects';
-import Project from './components/pages/Project';
+import Containers from '../src/components/layouts/Container';
+import Navbar from '../src/components/layouts/Navbar';
+import Footer from '../src/components/layouts/Footer';
+import Projects from '../src/components/pages/Projects';
+import Project from '../src/components/pages/Project';
 
 function App() {
   return (

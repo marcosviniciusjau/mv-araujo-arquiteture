@@ -2,7 +2,6 @@ import { useState } from 'react'
 import Input from '../form/Input'
 import SubmitButton from '../form/SubmitButton'
 import styles from '../project/ProjectForm.module.css'
-import { Import } from 'lucide-react'
 
 function ServiceForm({ handleSubmit, btnText, projectData }) {
   const [service, setService] = useState({})
